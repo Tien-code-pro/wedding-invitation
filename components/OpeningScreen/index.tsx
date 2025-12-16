@@ -39,15 +39,17 @@ export default function OpeningScreen({ onOpen }: Props) {
             Trân trọng kính mời
           </motion.span>
 
-          <motion.h1
-            className="font-great-vibes text-[#d2691e] text-5xl md:text-6xl leading-snug text-center"
-            initial={{ clipPath: 'inset(0 100% 0 0)' }}
-            animate={{ clipPath: 'inset(0 0 0 0)' }}
-            transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.35 }}
-          >
-            <span className="block">Bạn đến dự</span>
-            <span className="block text-[#8b0000]">lễ cưới của chúng tôi</span>
-          </motion.h1>
+          <div className="overflow-hidden">
+            <motion.h1
+              className="font-great-vibes text-5xl md:text-6xl leading-relaxed text-center pb-4"
+              initial={{ clipPath: 'inset(0 100% 0 0)' }}
+              animate={{ clipPath: 'inset(0 0 0 0)' }}
+              transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.35 }}
+            >
+              <span className="block">Bạn đến dự</span>
+              <span className="block text-[#8b0000]">lễ cưới của chúng tôi</span>
+            </motion.h1>
+          </div>
 
           {/* Nút mở thiệp */}
           <motion.div
@@ -62,9 +64,9 @@ export default function OpeningScreen({ onOpen }: Props) {
             {/* Nút mở thiệp */}
             <motion.button
               onClick={handleOpen}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-32 py-8 rounded-full bg-gradient-to-r from-[#ffecd2] via-[#fcb69f] to-[#ffecd2] text-[#5b2c2c] text-xl uppercase tracking-[0.5em] font-bold shadow-[0_20px_60px_rgba(252,182,159,0.4)] transition-all duration-500 hover:shadow-[0_35px_90px_rgba(252,182,159,0.6)]"
+              className="group relative px-12 py-4 md:px-16 md:py-5 rounded-full bg-gradient-to-r from-[#ffecd2] via-[#fcb69f] to-[#ffecd2] text-[#5b2c2c] text-lg md:text-xl uppercase tracking-widest font-bold shadow-[0_12px_30px_rgba(252,182,159,0.35)] transition-all duration-500 hover:shadow-[0_20px_45px_rgba(252,182,159,0.45)]"
             >
               {/* Outer border */}
               <span className="pointer-events-none absolute inset-0 rounded-full border border-[#fcb69f] opacity-70 group-hover:opacity-100 transition" />
@@ -73,8 +75,8 @@ export default function OpeningScreen({ onOpen }: Props) {
               <span className="pointer-events-none absolute top-0 left-[-160%] h-full w-[160%] bg-gradient-to-r from-transparent via-white/70 to-transparent rotate-12 group-hover:left-[160%] transition-all duration-[1200ms]" />
 
               {/* Content */}
-              <span className="relative z-10 flex items-center gap-4 open-card-btn">
-                <span className="text-2xl hand-hover">💌</span>
+              <span className="relative z-10 flex items-center gap-3 md:gap-4 open-card-btn">
+              <span className="text-xl md:text-2xl hand-hover">💌</span>
                 MỞ THIỆP
               </span>
             </motion.button>
