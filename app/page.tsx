@@ -7,10 +7,12 @@ import Wishes from "@/components/section/Wishes";
 import Footer from "@/components/section/Footer";
 import Location from "@/components/section/Location";
 import Gallery from "@/components/Gallery";
+import MusicPlayer from "@/components/MusicPlayer";
 
 export default function Home() {
   return (
     <main>
+      <MusicPlayer />    {/* Nhạc nền */}
       <Hero />           {/* Phần mở đầu + tên cô dâu chú rể + ngày cưới*/}
       <Story />          {/* Câu chuyện tình yêu*/}
       <Events />         {/* Lịch trình ngày cưới*/}
