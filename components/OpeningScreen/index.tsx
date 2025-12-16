@@ -57,9 +57,6 @@ export default function OpeningScreen({ onOpen }: Props) {
             transition={{ delay: 0.8, duration: 1 }}
           >
             {/* Halo ánh sáng phía sau */}
-            {/*<div*/}
-            {/*  className="absolute w-[360px] h-[360px] rounded-full bg-[#f2dcdc] blur-3xl opacity-40 -z-10 "*/}
-            {/*/>*/}
             <div className="halo" />
 
             {/* Nút mở thiệp */}

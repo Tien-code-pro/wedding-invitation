@@ -8,8 +8,11 @@ export interface MusicPlayerRef {
   pause: () => void;
 }
 
-const MusicPlayer = forwardRef<MusicPlayerRef, never>(
-  function MusicPlayer(_, ref) {
+const MusicPlayer = forwardRef<MusicPlayerRef, {}>(
+  function MusicPlayer(
+      _props: {},
+     ref: React.ForwardedRef<MusicPlayerRef>
+  ) {
     const audioRef = useRef<HTMLAudioElement>(null!);
     const [isPlaying, setIsPlaying] = useState(false);
 

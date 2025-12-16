@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className={`${playfair.variable} ${greatVibes.variable}`}>
+      <body className={`${playfair.variable} ${greatVibes.variable} `}>
         {children}
       </body>
     </html>

@@ -28,7 +28,6 @@ export default function Home() {
   return (
     <main>
       {!opened && <OpeningScreen onOpen={handleOpen} />}
-
       {opened && (
         <>
           <MusicPlayer ref={musicRef} />
@@ -38,7 +37,7 @@ export default function Home() {
           <Events /> {/* Lịch trình ngày cưới*/}
           <Gallery /> {/* Album ảnh cưới*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}
-          <Location /> {/* Google Map + địa chỉ*/}
+          {/*<Location /> /!* Google Map + địa chỉ*!/*/}
           <Wishes /> {/* Gửi lời chúc*/}
           <Gifts /> {/* Mừng cưới (QR / STK)*/}
           <Footer /> {/* Lời cảm ơn*/}
