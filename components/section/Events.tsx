@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaMapMarkedAlt, FaClock } from 'react-icons/fa';
-import {weddingEvents} from "@/components/data/wedding";
+import { weddingEvents } from '@/components/data/wedding';
 
 export default function Events() {
   return (
