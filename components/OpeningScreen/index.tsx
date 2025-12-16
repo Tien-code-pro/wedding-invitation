@@ -47,7 +47,9 @@ export default function OpeningScreen({ onOpen }: Props) {
               transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.35 }}
             >
               <span className="block">Bạn đến dự</span>
-              <span className="block text-[#8b0000]">lễ cưới của chúng tôi</span>
+              <span className="block text-[#8b0000]">
+                lễ cưới của chúng tôi
+              </span>
             </motion.h1>
           </div>
 
@@ -76,7 +78,7 @@ export default function OpeningScreen({ onOpen }: Props) {
 
               {/* Content */}
               <span className="relative z-10 flex items-center gap-3 md:gap-4 open-card-btn">
-              <span className="text-xl md:text-2xl hand-hover">💌</span>
+                <span className="text-xl md:text-2xl hand-hover">💌</span>
                 MỞ THIỆP
               </span>
             </motion.button>

@@ -1,19 +1,19 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
-  output: "standalone",
-  basePath: "", //VD: /bapchampion
+  output: 'standalone',
+  basePath: '', //VD: /bapchampion
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "**",
+        protocol: 'https',
+        hostname: '**',
       },
       {
         protocol: 'https',
         hostname: 's3-hcm-r2.s3cloud.vn',
       },
       {
-        hostname: "localhost",
+        hostname: 'localhost',
       },
     ],
     // loaderFile: "utils/next-image-config.ts",

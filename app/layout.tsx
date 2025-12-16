@@ -1,5 +1,6 @@
 import './globals.css';
 import { Playfair_Display, Great_Vibes } from 'next/font/google';
+import type { Metadata } from 'next';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -11,7 +12,10 @@ const greatVibes = Great_Vibes({
   weight: '400',
   variable: '--font-great-vibes',
 });
-
+export const metadata: Metadata = {
+  title: 'Wedding Invitation !!!',
+  description: 'A beautiful wedding invitation web page.',
+};
 export default function RootLayout({
   children,
 }: {
