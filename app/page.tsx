@@ -1,12 +1,12 @@
 import Hero from '@/components/section/Hero';
 import Story from '@/components/section/Story';
 import Events from '@/components/section/Events';
-import Gallery from "@/components/section/Gallery";
 import Countdown from "@/components/section/Countdown";
 import Gifts from "@/components/section/Gifts";
 import Wishes from "@/components/section/Wishes";
 import Footer from "@/components/section/Footer";
 import Location from "@/components/section/Location";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   return (
