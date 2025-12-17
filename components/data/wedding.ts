@@ -21,15 +21,25 @@ export const weddingStory = [
 
 export const weddingEvents = [
   {
-    title: 'TIỆC THÂN MẬT NHÀ TRAI',
-    time: '08:00 • 20/03/2025',
+    type: 'groom',
+    side: 'TIỆC THÂN MẬT NHÀ TRAI',
+    image: '/image/event/event-nha-trai.webp',
+    title1: 'TIỆC THÂN MẬT NHÀ TRAI',
+    title2: 'LỄ THÀNH HÔN',
+    time: '15 giờ 30 phút',
+    date: 'Thứ 7, ngày 20 tháng 12 năm 2025',
+    lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
     address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
-    mapUrl: 'https://maps.google.com/?q=Thôn+A+Xã+B+Huyện+C',
   },
   {
-    title: 'LỄ THÀNH HÔN',
-    time: '10:00 • 20/03/2025',
+    type: 'bride',
+    side: 'TIỆC THÂN MẬT NHÀ GÁI',
+    image: '/image/event/event-nha-gai.webp',
+    title1: 'TIỆC THÂN MẬT NHÀ GÁI',
+    title2: 'LỄ VU QUY',
+    time: '15 giờ 30 phút',
+    date: 'Thứ 7, ngày 20 tháng 12 năm 2025',
+    lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
     address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
-    mapUrl: 'https://maps.google.com/?q=Thôn+X+Xã+Y+Huyện+Z',
   },
 ];

@@ -1,53 +1,134 @@
 'use client';
 
+import { useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaMapMarkedAlt, FaClock } from 'react-icons/fa';
 import { weddingEvents } from '@/components/data/wedding';
 
 export default function Events() {
+  const [active, setActive] = useState(0);
+  const event = weddingEvents[active];
+
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-6 text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="font-[var(--font-great-vibes)] text-5xl text-pink-500"
+    <section className="py-28 bg-[#fff7f0]">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        {/* Title */}
+        <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700">
+          Wedding Day
+        </h2>
+
+        <p className="mt-4 text-gray-600">
+          Click vào sự kiện Nhà Gái – Nhà Trai để xem chi tiết lịch trình
+        </p>
+
+        {/* Switch */}
+        <div className="flex justify-center mt-10">
+          <div className="inline-flex rounded-full border overflow-hidden">
+            {weddingEvents.map((e, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`px-8 py-2 transition text-sm font-medium
+                  ${
+                    active === i
+                      ? 'bg-red-500 text-white'
+                      : 'bg-white text-gray-700'
+                  }`}
+              >
+                {e.side}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Card */}
+        <motion.div
+          key={active}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mt-20 grid md:grid-cols-2 bg-white rounded-3xl shadow-2xl overflow-hidden min-h-[750px]"
         >
-          Thông tin lễ cưới
-        </motion.h2>
+          {/* LEFT IMAGE */}
+          <div className="relative h-full min-h-[700px]">
+            <img
+              src={event.image}
+              alt="Wedding"
+              className="w-full h-full object-cover"
+            />
 
-        <div className="grid md:grid-cols-2 gap-10 mt-16">
-          {weddingEvents.map((event, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="border rounded-2xl p-8 shadow-sm hover:shadow-md transition"
-            >
-              <h3 className="text-2xl font-semibold mb-4">{event.title}</h3>
-
-              <p className="flex items-center justify-center gap-2 text-gray-600 mb-2">
-                <FaClock className="text-pink-500" />
-                {event.time}
+            {/* Overlay chữ */}
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center select-none">
+              <p
+                className="font-[var(--font-great-vibes)] text-4xl md:text-5xl text-white"
+                style={{
+                  textShadow: `
+        0 2px 6px rgba(0,0,0,0.45),
+        0 6px 18px rgba(0,0,0,0.35)
+      `,
+                }}
+              >
+                Save The Date
               </p>
 
-              <p className="text-gray-600 mb-6">{event.address}</p>
+              <div className="w-24 h-px bg-white/80 mx-auto my-3" />
 
-              <a
-                href={event.mapUrl}
-                target="_blank"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition"
+              <p
+                className="text-lg tracking-[0.35em] text-white"
+                style={{
+                  textShadow: '0 2px 6px rgba(0,0,0,0.45)',
+                }}
               >
-                <FaMapMarkedAlt />
-                Xem bản đồ
-              </a>
-            </motion.div>
-          ))}
-        </div>
+                20.12.2025
+              </p>
+            </div>
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="p-12 flex flex-col justify-center text-center">
+            <p className="uppercase tracking-widest text-sm">
+              Trân trọng kính mời
+            </p>
+
+            <p className="mt-2 text-red-500 font-semibold text-lg">Quý Khách</p>
+
+            <p className="mt-6 leading-relaxed text-gray-700">
+              Tới dự bữa Tiệc Thân Mật & Lễ Thành Hôn
+              <br />
+              chung vui cùng gia đình chúng tôi
+            </p>
+
+            <p className="mt-8 font-[var(--font-great-vibes)] text-4xl">
+              Tiến Dũng
+              <p className="my-4 text-xl">&</p>
+              Thùy Linh
+            </p>
+
+            {/* EVENT 1 */}
+            <div className="mt-6">
+              <h3 className="text-red-600 font-bold text-lg">{event.title1}</h3>
+              <p className="mt-2">Tổ chức vào lúc {event.time}</p>
+              <p className="mt-1 font-semibold">{event.date}</p>
+              <p className="text-sm italic">{event.lunar}</p>
+              <p className="mt-2">Tại : {event.address}</p>
+            </div>
+
+            {/* EVENT 2 */}
+            <div className="mt-10">
+              <h3 className="text-red-600 font-bold text-lg">{event.title2}</h3>
+              <p className="mt-2">Tổ chức vào lúc {event.time}</p>
+              <p className="mt-1 font-semibold">{event.date}</p>
+              <p className="text-sm italic">{event.lunar}</p>
+              <p className="mt-2">Tại : {event.address}</p>
+            </div>
+
+            <p className="mt-10 italic text-gray-600">
+              Sự hiện diện của quý khách là niềm vinh dự
+              <br />
+              cho gia đình chúng tôi !
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
