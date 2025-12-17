@@ -15,7 +15,7 @@ export default function Hero() {
         <section className="relative min-h-screen overflow-hidden">
             {/* Background image */}
             <Image
-                src="https://s3-hcm-r2.s3cloud.vn/thiepcuoi-mehappy/users/1927/3a638fbf-5f9e-49f0-b30e-a4ca7833291e-full.webp"
+                src="/image/gallery/banner.webp"
                 alt="Wedding"
                 fill
                 priority

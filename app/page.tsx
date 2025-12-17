@@ -31,10 +31,10 @@ export default function Home() {
       {opened && (
         <>
           <MusicPlayer ref={musicRef} />
-          <HeartRain />
+          {/*<HeartRain />*/}
           <Hero /> {/* Phần mở đầu + tên cô dâu chú rể + ngày cưới*/}
-          <Story /> {/* Câu chuyện tình yêu*/}
           <Events /> {/* Lịch trình ngày cưới*/}
+          <Story /> {/* Câu chuyện tình yêu*/}
           <Gallery /> {/* Album ảnh cưới*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
