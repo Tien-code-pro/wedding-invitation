@@ -15,6 +15,9 @@ const greatVibes = Great_Vibes({
 export const metadata: Metadata = {
   title: 'Wedding Invitation !!!',
   description: 'A beautiful wedding invitation web page.',
+  icons: {
+    icon: '/favicon.ico', // đây là đường dẫn tới favicon
+  },
 };
 export default function RootLayout({
   children,
