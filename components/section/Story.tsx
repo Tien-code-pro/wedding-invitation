@@ -14,7 +14,7 @@ export default function Story() {
           transition={{ duration: 0.8 }}
           className="font-[var(--font-great-vibes)] text-5xl text-pink-500"
         >
-          Câu chuyện tình yêu
+          Love Story
         </motion.h2>
 
         <div className="mt-16 space-y-12">

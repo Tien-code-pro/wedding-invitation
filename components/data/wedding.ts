@@ -1,35 +1,35 @@
 export const weddingStory = [
   {
-    title: 'Lần đầu gặp nhau',
-    date: '2019',
+    title: 'GẶP GỠ VÀ DUYÊN PHẬN',
+    date: 'The First Day',
     description:
-      'Chúng tôi vô tình gặp nhau trong một buổi chiều mưa. Chẳng ai ngờ khoảnh khắc đó lại là khởi đầu cho một hành trình dài.',
+      'Tình yêu là sự rung cảm của một tâm hồn khi gặp một tâm hồn đồng điệu, là sự hòa nhịp của hai trái tim, làm người ta nhìn thấy mọi vật tươi đẹp hơn. Khoảng cách giữa chúng ta nếu là một ngàn bước thì chỉ cần em đi bước đầu tiên, anh sẽ là người đi về phía em chín trăm chín chín bước còn lại.',
   },
   {
-    title: 'Hẹn hò',
-    date: '2020',
+    title: 'NĂM THÁNG YÊU NHAU',
+    date: 'The Love Day',
     description:
-      'Từ những buổi cà phê ngắn đến những chuyến đi dài, chúng tôi dần trở thành một phần không thể thiếu của nhau.',
+      'Hạnh phúc là khi gặp được người tuyệt nhất ở những giai đoạn đẹp nhất của tuổi thanh xuân và cùng nhìn nhau già đi, vì nhau mà cố gắng xây dựng một tương lai sung túc, tốt đẹp.',
   },
   {
-    title: 'Lời cầu hôn',
-    date: '2024',
+    title: 'NGÀY MÌNH CHUNG ĐÔI',
+    date: 'The Wedding Day',
     description:
-      "Sau tất cả, anh nắm tay em và nói: 'Chúng ta về chung một nhà nhé!'",
+      "Duyên phận là một điều vô cùng thú vị. Đến một lúc nào đó, tất cả những bối rối trong cuộc đời sẽ có câu trả lời. Đó sẽ là lúc mọi chuyện lại về đúng chỗ của nó. Những người sinh ra dành cho nhau, rồi sẽ nhìn thấy nhau và nắm lấy nhau trong cuộc đời này.'",
   },
 ];
 
 export const weddingEvents = [
   {
-    title: 'Lễ cưới nhà trai',
+    title: 'TIỆC THÂN MẬT NHÀ TRAI',
     time: '08:00 • 20/03/2025',
-    address: 'Thôn A, Xã B, Huyện C, Tỉnh D',
+    address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
     mapUrl: 'https://maps.google.com/?q=Thôn+A+Xã+B+Huyện+C',
   },
   {
-    title: 'Lễ cưới nhà gái',
+    title: 'LỄ THÀNH HÔN',
     time: '10:00 • 20/03/2025',
-    address: 'Thôn X, Xã Y, Huyện Z, Tỉnh K',
+    address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
     mapUrl: 'https://maps.google.com/?q=Thôn+X+Xã+Y+Huyện+Z',
   },
 ];

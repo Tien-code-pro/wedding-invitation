@@ -2,10 +2,16 @@
 
 import { useEffect, useState } from 'react';
 
-const WEDDING_DATE = new Date('2025-12-20T10:00:00');
+const WEDDING_DATE = new Date('2026-12-20T10:00:00');
+type TimeLeft = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
 
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = useState<any>(null);
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
