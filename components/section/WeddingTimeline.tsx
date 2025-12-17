@@ -39,7 +39,6 @@ export default function WeddingTimeline() {
           {/* CONTENT */}
           <div className="relative z-10 grid md:grid-cols-2 min-h-[720px]">
             {/* LEFT – TIMELINE */}
-            {/* LEFT – TIMELINE */}
             <div className="relative z-10 flex items-center justify-center px-16">
               <div className="w-full max-w-md space-y-12 text-white">
                 {weddingTimeline.map((item, index) => (
