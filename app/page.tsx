@@ -14,6 +14,7 @@ import { useRef, useState } from 'react';
 import OpeningScreen from '@/components/OpeningScreen';
 import HeartRain from '@/components/section/HeartRain';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
+import WeddingAttending from "@/components/section/WeddingAttending";
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
@@ -36,6 +37,7 @@ export default function Home() {
           <Hero /> {/* Phần mở đầu + tên cô dâu chú rể + ngày cưới*/}
           <Events /> {/* Lịch trình ngày cưới*/}
           <WeddingTimeline /> {/* Timeline ngày cưới*/}
+          <WeddingAttending/> {/* Xác nhận tham dự*/}
           <Story /> {/* Câu chuyện tình yêu*/}
           <Gallery /> {/* Album ảnh cưới*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}

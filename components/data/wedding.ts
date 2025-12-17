@@ -70,3 +70,35 @@ export const weddingTimeline = [
     side: 'Nhà Trai',
   },
 ];
+
+
+export const weddingAttendingContent = {
+  title: 'Wedding Attending',
+  description:
+      'Đám cưới sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện và lời chúc phúc của bạn. Hãy xác nhận tham dự để chúng mình chuẩn bị đón tiếp bạn chu đáo nhất nhé ♥️',
+
+  guestOfOptions: [
+    'Bạn của cô dâu',
+    'Bạn của chú rể',
+    'Khách nhà trai',
+    'Khách nhà gái',
+  ],
+
+  attendanceOptions: [
+    {
+      value: 'yes',
+      label: 'Tôi sẽ tham dự',
+    },
+    {
+      value: 'no',
+      label: 'Xin lỗi, tôi bận mất rồi',
+    },
+  ],
+
+  eventOptions: [
+    'Tiệc nhà trai',
+    'Tiệc nhà gái',
+    'Lễ vu quy',
+    'Lễ thành hôn',
+  ],
+};
