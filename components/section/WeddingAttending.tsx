@@ -154,7 +154,7 @@ export default function WeddingAttending() {
           {/* IMAGE */}
           <div className="relative min-h-[600px]">
             <Image
-              src="/image/gallery/love-story.webp"
+              src="/image/attending/attending.webp"
               alt="Wedding"
               fill
               className="object-cover"
