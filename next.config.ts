@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
-  output: 'export',
+  // output: 'export',
+  output: 'standalone',
   basePath: '', //VD: /bapchampion
   images: {
     remotePatterns: [
