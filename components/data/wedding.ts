@@ -44,7 +44,6 @@ export const weddingEvents = [
   },
 ];
 
-
 export const weddingTimeline = [
   {
     time: '15:00',
@@ -71,5 +70,3 @@ export const weddingTimeline = [
     side: 'Nhà Trai',
   },
 ];
-
-
