@@ -71,11 +71,10 @@ export const weddingTimeline = [
   },
 ];
 
-
 export const weddingAttendingContent = {
   title: 'Wedding Attending',
   description:
-      'Đám cưới sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện và lời chúc phúc của bạn. Hãy xác nhận tham dự để chúng mình chuẩn bị đón tiếp bạn chu đáo nhất nhé ♥️',
+    'Đám cưới sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện và lời chúc phúc của bạn. Hãy xác nhận tham dự để chúng mình chuẩn bị đón tiếp bạn chu đáo nhất nhé ♥️',
 
   guestOfOptions: [
     'Bạn của cô dâu',
@@ -95,10 +94,5 @@ export const weddingAttendingContent = {
     },
   ],
 
-  eventOptions: [
-    'Tiệc nhà trai',
-    'Tiệc nhà gái',
-    'Lễ vu quy',
-    'Lễ thành hôn',
-  ],
+  eventOptions: ['Tiệc nhà trai', 'Tiệc nhà gái', 'Lễ vu quy', 'Lễ thành hôn'],
 };
