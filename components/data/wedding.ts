@@ -43,3 +43,33 @@ export const weddingEvents = [
     address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
   },
 ];
+
+
+export const weddingTimeline = [
+  {
+    time: '15:00',
+    date: 'Thứ 7, ngày 20.12.2025',
+    title: 'Tiệc Thân Mật',
+    side: 'Nhà Gái',
+  },
+  {
+    time: '15:00',
+    date: 'Thứ 7, ngày 20.12.2025',
+    title: 'Tiệc Thân Mật',
+    side: 'Nhà Trai',
+  },
+  {
+    time: '15:00',
+    date: 'Thứ 7, ngày 20.12.2025',
+    title: 'Lễ Vu Quy',
+    side: 'Nhà Gái',
+  },
+  {
+    time: '15:00',
+    date: 'Thứ 7, ngày 20.12.2025',
+    title: 'Lễ Thành Hôn',
+    side: 'Nhà Trai',
+  },
+];
+
+
