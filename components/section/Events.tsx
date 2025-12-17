@@ -51,9 +51,10 @@ export default function Events() {
         >
           {/* LEFT IMAGE */}
           <div className="relative h-full min-h-[700px]">
-            <img
+            <Image
               src={event.image}
               alt="Wedding"
+              fill
               className="w-full h-full object-cover"
             />
 

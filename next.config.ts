@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
         hostname: 'localhost',
       },
     ],
+    unoptimized: true,
     // loaderFile: "utils/next-image-config.ts",
   },
   // reactStrictMode: false,
