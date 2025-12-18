@@ -177,7 +177,6 @@ export const AI_CONFIG = {
   fakeDelay: 1200, // dùng cho mock UI
 };
 
-
 // MỪNG CƯỚI (QR / STK)
 export const WEDDING_GIFTS_TEXT = {
   title: 'Gửi Lời Chúc Phúc',
