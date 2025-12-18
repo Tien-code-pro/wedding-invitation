@@ -37,8 +37,8 @@ export default function Home() {
           <WeddingTimeline /> {/* Timeline ngày cưới*/}
           <WeddingAttending /> {/* Xác nhận tham dự*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}
-          <Story /> {/* Câu chuyện tình yêu*/}
           <Gallery /> {/* Album ảnh cưới*/}
+          <Story /> {/* Câu chuyện tình yêu*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
           <Wishes /> {/* Gửi lời chúc*/}
           <Gifts /> {/* Mừng cưới (QR / STK)*/}
