@@ -13,7 +13,7 @@ import WeddingAttending from '@/components/section/WeddingAttending';
 import WeddingFamilySection from '@/components/section/WeddingFamilySection';
 import WeddingAlbum from '@/components/section/WeddingAlbum';
 import AnnouncementPopup from '@/components/section/AnnouncementPopup';
-import OpeningScreen from "@/components/section/OpeningScreen";
+import OpeningScreen from '@/components/section/OpeningScreen';
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
