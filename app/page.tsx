@@ -13,7 +13,7 @@ import OpeningScreen from '@/components/OpeningScreen';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
 import WeddingAttending from '@/components/section/WeddingAttending';
 import WeddingFamilySection from '@/components/section/WeddingFamilySection';
-import WeddingAlbum from "@/components/section/WeddingAlbum";
+import WeddingAlbum from '@/components/section/WeddingAlbum';
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
@@ -39,7 +39,7 @@ export default function Home() {
           <WeddingAttending /> {/* Xác nhận tham dự*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}
           <WeddingFamilySection /> {/* Thông tin đám cưới*/}
-          <WeddingAlbum/> {/* Album ảnh cưới*/}
+          <WeddingAlbum /> {/* Album ảnh cưới*/}
           <Story /> {/* Câu chuyện tình yêu*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
           <Wishes /> {/* Gửi lời chúc*/}

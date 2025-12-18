@@ -138,21 +138,20 @@ export const weddingFamilyData = {
 
 // TẤT CẢ ẢNH ALBUM (20 ảnh)
 export const weddingAlbumAllImages: string[] = [
-  "/image/album/1.webp",
-  "/image/album/2.webp",
-  "/image/album/3.webp",
-  "/image/album/4.webp",
-  "/image/album/5.webp",
-  "/image/album/6.webp",
-  "/image/album/7.webp",
-  "/image/album/8.webp",
-  "/image/album/9.webp",
-  "/image/album/10.webp",
+  '/image/album/1.webp',
+  '/image/album/2.webp',
+  '/image/album/3.webp',
+  '/image/album/4.webp',
+  '/image/album/5.webp',
+  '/image/album/6.webp',
+  '/image/album/7.webp',
+  '/image/album/8.webp',
+  '/image/album/9.webp',
+  '/image/album/10.webp',
 ];
 
 // PREVIEW NGOÀI TRANG (10 ảnh)
-export const weddingAlbumPreviewImages =
-    weddingAlbumAllImages.slice(0, 10);
+export const weddingAlbumPreviewImages = weddingAlbumAllImages.slice(0, 10);
 
 // Ảnh nền cho nút "Xem thêm"
-export const weddingAlbumButtonBg  = "/image/information/information1.webp";
+export const weddingAlbumButtonBg = '/image/information/information1.webp';
