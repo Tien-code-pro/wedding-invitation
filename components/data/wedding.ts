@@ -1,5 +1,5 @@
 import { Users, Heart, Camera, Utensils } from 'lucide-react';
-import {AnnouncementSide} from "@/types/apiTypes";
+import { AnnouncementSide } from '@/types/apiTypes';
 
 // CÂU CHUYỆN TÌNH YÊU
 export const weddingStory = [
@@ -248,7 +248,7 @@ export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
       lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
     },
     footerNote:
-        'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
+      'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
   },
 
   gai: {
@@ -268,6 +268,6 @@ export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
       lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
     },
     footerNote:
-        'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
+      'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
   },
 };

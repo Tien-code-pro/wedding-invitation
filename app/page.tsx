@@ -41,30 +41,28 @@ export default function Home() {
   };
 
   return (
-      <main>
-        {!opened && <OpeningScreen onOpen={handleOpen} />}
+    <main>
+      {!opened && <OpeningScreen onOpen={handleOpen} />}
 
-        {opened && (
-            <>
-              {showAnnouncement && (
-                  <AnnouncementPopup
-                      onClose={() => setShowAnnouncement(false)}
-                  />
-              )}
+      {opened && (
+        <>
+          {showAnnouncement && (
+            <AnnouncementPopup onClose={() => setShowAnnouncement(false)} />
+          )}
 
-              <MusicPlayer ref={musicRef} />
-              <Hero />
-              <Events />
-              <WeddingTimeline />
-              <WeddingAttending />
-              <Countdown />
-              <WeddingFamilySection />
-              <WeddingAlbum />
-              <Story />
-              <Gifts />
-              <Footer />
-            </>
-        )}
-      </main>
+          <MusicPlayer ref={musicRef} />
+          <Hero />
+          <Events />
+          <WeddingTimeline />
+          <WeddingAttending />
+          <Countdown />
+          <WeddingFamilySection />
+          <WeddingAlbum />
+          <Story />
+          <Gifts />
+          <Footer />
+        </>
+      )}
+    </main>
   );
 }
