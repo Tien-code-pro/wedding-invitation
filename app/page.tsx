@@ -31,9 +31,11 @@ export default function Home() {
 
     // xử lý popup tại đây
     const seen = localStorage.getItem('wedding_popup_seen');
-    const today = new Date().toDateString();
+    // const today = new Date().toDateString();
+    const now = Date.now();
+    const SIXTY_MINUTES = 60 * 60 * 1000;
 
-    if (seen !== today) {
+    if (!seen || now - Number(seen) > SIXTY_MINUTES) {
       setTimeout(() => {
         setShowAnnouncement(true);
       }, 1500);

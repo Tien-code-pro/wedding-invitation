@@ -14,8 +14,9 @@ export default function AnnouncementPopup({
   const data = ANNOUNCEMENT_DATA[activeTab];
 
   const handleClose = () => {
-    localStorage.setItem('wedding_popup_seen', new Date().toDateString());
-    onClose();
+    // localStorage.setItem('wedding_popup_seen', new Date().toDateString());
+      localStorage.setItem('wedding_popup_seen', Date.now().toString());
+      onClose();
   };
 
   return (
@@ -75,44 +76,59 @@ export default function AnnouncementPopup({
             </div>
 
             {/* Content */}
-            <div className="border-2 border-rose-200 rounded-xl p-6 text-center space-y-4">
-              <div className="font-[var(--font-great-vibes)] text-4xl text-rose-500">
-                {data.couple.groom}
-                <Heart size={18} className="inline mx-2 fill-rose-400" />
-                {data.couple.bride}
+              <div className="border-2 border-rose-200 rounded-xl p-6 text-center space-y-4">
+                  {/* Couple name */}
+                  <div
+                      className="font-[var(--font-great-vibes)] text-3xl sm:text-4xl text-rose-500 leading-tight flex flex-col items-center justify-center gap-1 md:flex-row md:gap-2 whitespace-nowrap"
+                  >
+                      <span>{data.couple.groom}</span>
+
+                      <span className="text-rose-400">
+                          <Heart size={16} className="inline fill-rose-400" />
+                        </span>
+
+                      <span>{data.couple.bride}</span>
+                  </div>
+
+                  <p className="text-gray-600 font-medium">
+                      {data.inviteText}
+                  </p>
+
+                  <p className="text-gray-500 italic">
+                      {data.inviteTarget}
+                  </p>
+
+                  <div className="py-2">
+                      <p className="font-[var(--font-great-vibes)] text-4xl text-rose-800">
+                          {data.locationTitle}
+                      </p>
+                      <p className="text-sm text-gray-600">{data.address}</p>
+                  </div>
+
+                  <div className="border-t border-rose-100 pt-4">
+                      <p className="text-xs text-gray-500 font-bold uppercase mb-2">
+                          Vào lúc {data.time}
+                      </p>
+
+                      <div className="flex items-center justify-center gap-4 text-2xl font-serif font-bold">
+                          <span>{data.date.day}</span>
+                          <div className="w-px h-8 bg-gray-300" />
+                          <span>{data.date.month}</span>
+                          <div className="w-px h-8 bg-gray-300" />
+                          <span>{data.date.year}</span>
+                      </div>
+
+                      <p className="text-[10px] text-gray-400 italic mt-2">
+                          {data.date.lunar}
+                      </p>
+                  </div>
+
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-gray-400 whitespace-pre-line pt-4">
+                      {data.footerNote}
+                  </p>
               </div>
 
-              <p className="text-gray-600 font-medium">{data.inviteText}</p>
 
-              <p className="text-gray-500 italic">{data.inviteTarget}</p>
-
-              <div className="py-2">
-                <p className="font-[var(--font-great-vibes)] text-4xl text-rose-800">
-                  {data.locationTitle}
-                </p>
-                <p className="text-sm text-gray-600">{data.address}</p>
-              </div>
-
-              <div className="border-t border-rose-100 pt-4">
-                <p className="text-xs text-gray-500 font-bold uppercase mb-2">
-                  Vào lúc {data.time}
-                </p>
-
-                <div className="flex justify-center gap-4 text-2xl font-serif font-bold">
-                  <span>{data.date.day}</span>
-                  <span>{data.date.month}</span>
-                  <span>{data.date.year}</span>
-                </div>
-
-                <p className="text-[10px] text-gray-400 italic mt-2">
-                  {data.date.lunar}
-                </p>
-              </div>
-
-              <p className="text-[10px] uppercase tracking-[0.2em] text-gray-400 whitespace-pre-line pt-4">
-                {data.footerNote}
-              </p>
-            </div>
           </div>
         </motion.div>
       </div>
