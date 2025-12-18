@@ -176,3 +176,32 @@ export const AI_CONFIG = {
   defaultTone: 'ngọt ngào',
   fakeDelay: 1200, // dùng cho mock UI
 };
+
+
+// MỪNG CƯỚI (QR / STK)
+export const WEDDING_GIFTS_TEXT = {
+  title: 'Gửi Lời Chúc Phúc',
+  description: `Sự hiện diện của bạn là niềm hạnh phúc lớn nhất đối với chúng tôi.
+Nếu bạn muốn gửi tặng một món quà nhỏ, chúng tôi xin chân thành cảm ơn.`,
+  openHint: 'Bấm vào hộp quà',
+  modalTitle: 'Mừng cưới đến hai nhà',
+};
+
+export const GIFT_RECEIVERS = [
+  {
+    id: 'groom',
+    label: 'Chú rể',
+    name: 'NGUYỄN TIẾN DŨNG',
+    bank: 'Techcombank',
+    accountNumber: '1903 6922 0560 19',
+    qrImage: '/image/qr/qr-boy.jpeg',
+  },
+  {
+    id: 'bride',
+    label: 'Cô dâu',
+    name: 'TRẦN THÙY LINH',
+    bank: 'Techcombank',
+    accountNumber: '1903 6922 0560 19',
+    qrImage: '/image/qr/qr-boy.jpeg',
+  },
+];
