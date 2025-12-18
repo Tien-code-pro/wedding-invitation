@@ -38,7 +38,16 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 1.2 }}
             className={`text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-[0_8px_20px_rgba(0,0,0,0.6)] leading-relaxed ${dancingScript.variable}`}
           >
-            Tiến Dũng & Thùy Linh
+            {/* Tên chú rể */}
+            <span className="block md:inline">Tiến Dũng</span>
+
+            {/* Dấu & */}
+            <span className="block md:inline mx-0 md:mx-3 text-3xl md:text-5xl">
+              &
+            </span>
+
+            {/* Tên cô dâu */}
+            <span className="block md:inline">Thùy Linh</span>
           </motion.h1>
 
           {/* Quote below */}
