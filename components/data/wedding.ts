@@ -205,8 +205,6 @@ export const GIFT_RECEIVERS = [
   },
 ];
 
-
-
 // LỜI CẢM ƠN
 export const FOOTER_CONTENT = {
   backgroundImage: '/image/information/information1.webp',
