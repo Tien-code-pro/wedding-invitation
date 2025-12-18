@@ -46,9 +46,9 @@ export default function Countdown() {
   return (
       <section className="py-24 bg-[#fffaf5] text-center">
         {/* Tiêu đề dùng font Serif để tạo cảm giác sang trọng */}
-        <h2 className="font-[var(--font-great-vibes)] text-5xl md:text-4xl text-gray-700 mb-12 tracking-wide">
-          Wedding Countdown
-        </h2>
+          <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700 mb-12 leading-normal">
+              Wedding Countdown
+          </h2>
 
         <div className="flex justify-center gap-4 md:gap-8 px-4">
           {Object.entries(timeLeft).map(([label, value]) => (

@@ -67,12 +67,12 @@ export default function WeddingAttending() {
     <section className="py-28 bg-[#fff7f0]">
       <div className="max-w-6xl mx-auto px-6">
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700">
+        <div className="text-center mb-16 px-4">
+          <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700 leading-normal">
             {title}
           </h2>
 
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed opacity-90">
             {description}
           </p>
         </div>
