@@ -42,7 +42,7 @@ export default function Home() {
           <WeddingAlbum /> {/* Album ảnh cưới*/}
           <Story /> {/* Câu chuyện tình yêu*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
-          <Wishes /> {/* Gửi lời chúc*/}
+          {/*<Wishes /> /!* Gửi lời chúc*!/*/}
           <Gifts /> {/* Mừng cưới (QR / STK)*/}
           <Footer /> {/* Lời cảm ơn*/}
         </>
