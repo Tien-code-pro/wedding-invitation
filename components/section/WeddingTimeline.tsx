@@ -39,34 +39,46 @@ export default function WeddingTimeline() {
           {/* CONTENT */}
           <div className="relative z-10 grid md:grid-cols-2 min-h-[720px]">
             {/* LEFT – TIMELINE */}
-            <div className="relative z-10 flex items-center justify-center px-16">
-              <div className="w-full max-w-md space-y-12 text-white">
-                {weddingTimeline.map((item, index) => (
-                  <div key={index} className="relative pl-14 text-left">
-                    {/* DOT */}
-                    <span className="absolute left-2 top-2 w-3.5 h-3.5 rounded-full bg-white shadow-md" />
+            <div className="relative z-10 flex items-center justify-center px-6 md:px-16 py-10">
+              <div className="w-full max-w-lg space-y-12 text-white">
+                {weddingTimeline.map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div key={index} className="relative pl-20 text-left">
 
-                    {/* LINE */}
-                    {index !== weddingTimeline.length - 1 && (
-                      <span className="absolute left-[18px] top-6 h-full w-px bg-white/40" />
-                    )}
+                      {/* ĐƯỜNG KẺ (LINE) - Màu Trắng/Độ mờ */}
+                      {index !== weddingTimeline.length - 1 && (
+                        <span
+                            className="absolute left-[23px] top-12 h-[calc(100%+24px)] w-px bg-white/40"
+                        />
+                      )}
 
-                    {/* TIME */}
-                    <p className="text-sm md:text-base tracking-widest opacity-90">
-                      {item.time} · {item.date}
-                    </p>
+                      {/* ICON CONTAINER - Màu Trắng/Độ mờ */}
+                      {/* Giữ viền và nền mờ để tạo hiệu ứng 3D nhẹ */}
+                      <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/10 backdrop-blur-sm">
+                        <IconComponent size={22} strokeWidth={1.5} className="text-white" />
+                      </div>
 
-                    {/* TITLE */}
-                    <h3 className="mt-2 text-2xl font-semibold leading-snug">
-                      {item.title}
-                    </h3>
+                      {/* NỘI DUNG VĂN BẢN */}
+                      <div className="flex flex-col">
+                        {/* THỜI GIAN & NGÀY */}
+                        <p className="text-xs md:text-sm tracking-[0.2em] font-medium uppercase opacity-90">
+                          {item.time} — {item.date}
+                        </p>
 
-                    {/* SIDE */}
-                    <p className="mt-1 text-base italic opacity-90">
-                      {item.side}
-                    </p>
-                  </div>
-                ))}
+                        {/* TIÊU ĐỀ CHÍNH */}
+                        <h3 className="mt-1 text-xl md:text-2xl font-semibold leading-tight tracking-wide">
+                          {item.title}
+                        </h3>
+
+                        {/* PHỤ ĐỀ / VỊ TRÍ */}
+                        <p className="mt-1 text-sm md:text-base italic opacity-70 font-light">
+                          {item.side}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 

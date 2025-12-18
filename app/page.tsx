@@ -7,12 +7,10 @@ import Countdown from '@/components/section/Countdown';
 import Gifts from '@/components/section/Gifts';
 import Wishes from '@/components/section/Wishes';
 import Footer from '@/components/section/Footer';
-import Location from '@/components/section/Location';
 import Gallery from '@/components/Gallery';
 import MusicPlayer, { MusicPlayerRef } from '@/components/MusicPlayer';
 import { useRef, useState } from 'react';
 import OpeningScreen from '@/components/OpeningScreen';
-import HeartRain from '@/components/section/HeartRain';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
 import WeddingAttending from '@/components/section/WeddingAttending';
 
@@ -38,9 +36,9 @@ export default function Home() {
           <Events /> {/* Lịch trình ngày cưới*/}
           <WeddingTimeline /> {/* Timeline ngày cưới*/}
           <WeddingAttending /> {/* Xác nhận tham dự*/}
+          <Countdown /> {/* Đếm ngược ngày cưới*/}
           <Story /> {/* Câu chuyện tình yêu*/}
           <Gallery /> {/* Album ảnh cưới*/}
-          <Countdown /> {/* Đếm ngược ngày cưới*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
           <Wishes /> {/* Gửi lời chúc*/}
           <Gifts /> {/* Mừng cưới (QR / STK)*/}

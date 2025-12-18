@@ -1,3 +1,4 @@
+import { Users, Heart, Camera, Utensils } from 'lucide-react';
 export const weddingStory = [
   {
     title: 'GẶP GỠ VÀ DUYÊN PHẬN',
@@ -46,28 +47,32 @@ export const weddingEvents = [
 
 export const weddingTimeline = [
   {
-    time: '15:00',
-    date: 'Thứ 7, ngày 20.12.2025',
-    title: 'Tiệc Thân Mật',
-    side: 'Nhà Gái',
-  },
-  {
-    time: '15:00',
-    date: 'Thứ 7, ngày 20.12.2025',
-    title: 'Tiệc Thân Mật',
+    time: '09:00',
+    date: '20.12.2025',
+    title: 'Đón khách',
     side: 'Nhà Trai',
+    icon: Users,
   },
   {
-    time: '15:00',
-    date: 'Thứ 7, ngày 20.12.2025',
-    title: 'Lễ Vu Quy',
-    side: 'Nhà Gái',
-  },
-  {
-    time: '15:00',
-    date: 'Thứ 7, ngày 20.12.2025',
+    time: '09:30',
+    date: '20.12.2025',
     title: 'Lễ Thành Hôn',
     side: 'Nhà Trai',
+    icon: Heart,
+  },
+  {
+    time: '10:00',
+    date: '20.12.2025',
+    title: 'Chụp ảnh kỷ niệm',
+    side: 'Cô Dâu & Chú Rể',
+    icon: Camera, // Đưa camera vào đúng mục chụp ảnh
+  },
+  {
+    time: '10:30',
+    date: '20.12.2025',
+    title: 'Khai tiệc',
+    side: 'Nhà Trai',
+    icon: Utensils, // Dùng icon bộ đồ ăn cho khai tiệc
   },
 ];
 
