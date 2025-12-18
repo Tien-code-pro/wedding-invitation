@@ -204,3 +204,28 @@ export const GIFT_RECEIVERS = [
     qrImage: '/image/qr/qr-boy.jpeg',
   },
 ];
+
+
+
+// LỜI CẢM ƠN
+export const FOOTER_CONTENT = {
+  backgroundImage: '/image/information/information1.webp',
+  backgroundAlt: 'Thank You Background',
+
+  title: 'Thank You',
+
+  message: `Chân thành cảm ơn gia đình, bạn bè và tất cả những ai đã
+cùng tụi mình viết nên một ngày đáng nhớ. Sự hiện diện và
+yêu thương của mọi người là món quà quý giá nhất.`,
+
+  closing: 'Trân trọng kính mời & Hẹn gặp lại',
+
+  hearts: {
+    count: 15,
+    minSize: 10,
+    maxSize: 30,
+    minDuration: 2,
+    maxDuration: 5,
+    maxDelay: 5,
+  },
+};
