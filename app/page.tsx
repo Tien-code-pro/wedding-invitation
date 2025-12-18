@@ -8,12 +8,12 @@ import Countdown from '@/components/section/Countdown';
 import Gifts from '@/components/section/Gifts';
 import Footer from '@/components/section/Footer';
 import MusicPlayer, { MusicPlayerRef } from '@/components/MusicPlayer';
-import OpeningScreen from '@/components/OpeningScreen';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
 import WeddingAttending from '@/components/section/WeddingAttending';
 import WeddingFamilySection from '@/components/section/WeddingFamilySection';
 import WeddingAlbum from '@/components/section/WeddingAlbum';
 import AnnouncementPopup from '@/components/section/AnnouncementPopup';
+import OpeningScreen from "@/components/section/OpeningScreen";
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
