@@ -45,18 +45,19 @@ export default function WeddingTimeline() {
                   const IconComponent = item.icon;
                   return (
                     <div key={index} className="relative pl-20 text-left">
-
                       {/* ĐƯỜNG KẺ (LINE) - Màu Trắng/Độ mờ */}
                       {index !== weddingTimeline.length - 1 && (
-                        <span
-                            className="absolute left-[23px] top-12 h-[calc(100%+24px)] w-px bg-white/40"
-                        />
+                        <span className="absolute left-[23px] top-12 h-[calc(100%+24px)] w-px bg-white/40" />
                       )}
 
                       {/* ICON CONTAINER - Màu Trắng/Độ mờ */}
                       {/* Giữ viền và nền mờ để tạo hiệu ứng 3D nhẹ */}
                       <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-white/10 backdrop-blur-sm">
-                        <IconComponent size={22} strokeWidth={1.5} className="text-white" />
+                        <IconComponent
+                          size={22}
+                          strokeWidth={1.5}
+                          className="text-white"
+                        />
                       </div>
 
                       {/* NỘI DUNG VĂN BẢN */}

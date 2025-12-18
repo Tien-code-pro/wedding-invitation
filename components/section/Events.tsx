@@ -13,20 +13,24 @@ export default function Events() {
     <section className="py-28 bg-[#fff7f0]">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Title */}
-          <div className="text-center px-4">
-              {/* Đồng bộ font, kích thước 5xl và màu sắc */}
-              <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700 leading-normal">
-                  Wedding Day
-              </h2>
+        <div className="text-center px-4">
+          {/* Đồng bộ font, kích thước 5xl và màu sắc */}
+          <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700 leading-normal">
+            Wedding Day
+          </h2>
 
-              {/* Chỉnh lại độ mờ và font chữ cho phần hướng dẫn để trông tinh tế hơn */}
-              <p className="mt-4 text-gray-500 max-w-2xl mx-auto leading-relaxed font-light italic">
-                  Click vào sự kiện <span className="font-semibold text-gray-600">Nhà Gái – Nhà Trai</span> để xem chi tiết lịch trình
-              </p>
+          {/* Chỉnh lại độ mờ và font chữ cho phần hướng dẫn để trông tinh tế hơn */}
+          <p className="mt-4 text-gray-500 max-w-2xl mx-auto leading-relaxed font-light italic">
+            Click vào sự kiện{' '}
+            <span className="font-semibold text-gray-600">
+              Nhà Gái – Nhà Trai
+            </span>{' '}
+            để xem chi tiết lịch trình
+          </p>
 
-              {/* Đường kẻ phân cách nhẹ nhàng để bố cục bớt bị "lệch" mắt */}
-              <div className="w-12 h-px bg-gray-200 mx-auto mt-6"></div>
-          </div>
+          {/* Đường kẻ phân cách nhẹ nhàng để bố cục bớt bị "lệch" mắt */}
+          <div className="w-12 h-px bg-gray-200 mx-auto mt-6"></div>
+        </div>
 
         {/* Switch */}
         <div className="flex justify-center mt-10">
