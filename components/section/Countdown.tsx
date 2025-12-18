@@ -44,7 +44,7 @@ export default function Countdown() {
   ];
 
   return (
-    <section className="py-24 bg-[#fffaf5] text-center">
+    <section className="py-20 bg-[#fffaf5] text-center">
       {/* Tiêu đề dùng font Serif để tạo cảm giác sang trọng */}
       <h2 className="font-[var(--font-great-vibes)] text-5xl text-gray-700 mb-12 leading-normal">
         Wedding Countdown

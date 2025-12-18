@@ -1,4 +1,6 @@
 import { Users, Heart, Camera, Utensils } from 'lucide-react';
+
+// CÂU CHUYỆN TÌNH YÊU
 export const weddingStory = [
   {
     title: 'GẶP GỠ VÀ DUYÊN PHẬN',
@@ -20,6 +22,7 @@ export const weddingStory = [
   },
 ];
 
+// SỰ KIỆN NGÀY CƯỚI
 export const weddingEvents = [
   {
     type: 'groom',
@@ -45,6 +48,7 @@ export const weddingEvents = [
   },
 ];
 
+// DÒNG THỜI GIAN NGÀY CƯỚI
 export const weddingTimeline = [
   {
     time: '09:00',
@@ -76,6 +80,7 @@ export const weddingTimeline = [
   },
 ];
 
+// XÁC NHẬN THAM DỰ ĐÁM CƯỚI
 export const weddingAttendingContent = {
   title: 'Wedding Attending',
   description:
@@ -102,6 +107,7 @@ export const weddingAttendingContent = {
   eventOptions: ['Tiệc nhà trai', 'Tiệc nhà gái', 'Lễ vu quy', 'Lễ thành hôn'],
 };
 
+// THÔNG TIN GIA ĐÌNH CÔ DÂU CHÚ RỂ
 export const weddingFamilyData = {
   background: '/image/information/information1.webp',
 
@@ -129,3 +135,24 @@ export const weddingFamilyData = {
     },
   },
 };
+
+// TẤT CẢ ẢNH ALBUM (20 ảnh)
+export const weddingAlbumAllImages: string[] = [
+  "/image/album/1.webp",
+  "/image/album/2.webp",
+  "/image/album/3.webp",
+  "/image/album/4.webp",
+  "/image/album/5.webp",
+  "/image/album/6.webp",
+  "/image/album/7.webp",
+  "/image/album/8.webp",
+  "/image/album/9.webp",
+  "/image/album/10.webp",
+];
+
+// PREVIEW NGOÀI TRANG (10 ảnh)
+export const weddingAlbumPreviewImages =
+    weddingAlbumAllImages.slice(0, 10);
+
+// Ảnh nền cho nút "Xem thêm"
+export const weddingAlbumButtonBg  = "/image/information/information1.webp";

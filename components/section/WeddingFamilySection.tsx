@@ -23,7 +23,7 @@ export default function WeddingFamilySection() {
 
   return (
     <>
-      <section className="w-full py-32 bg-[#fffaf5] flex justify-center">
+      <section className="w-full py-28 bg-[#fffaf5] flex justify-center">
         <div className="relative w-[92%] max-w-[900px] min-h-[85vh] rounded-[56px] overflow-hidden shadow-2xl">
           {/* BACKGROUND */}
           <div className="absolute inset-0">
