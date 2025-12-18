@@ -102,7 +102,6 @@ export const weddingAttendingContent = {
   eventOptions: ['Tiệc nhà trai', 'Tiệc nhà gái', 'Lễ vu quy', 'Lễ thành hôn'],
 };
 
-
 export const weddingFamilyData = {
   background: '/image/information/information1.webp',
 
@@ -110,7 +109,7 @@ export const weddingFamilyData = {
     name: 'Tiến Dũng',
     image: '/image/information/information2.webp',
     quote:
-        'Đối với chúng mình, hôn nhân không phải là đích đến cuối của tình yêu mà là khởi đầu của hạnh phúc.',
+      'Đối với chúng mình, hôn nhân không phải là đích đến cuối của tình yêu mà là khởi đầu của hạnh phúc.',
     family: {
       title: 'Gia đình nhà trai',
       father: 'Nguyễn Văn A',
@@ -122,7 +121,7 @@ export const weddingFamilyData = {
     name: 'Thùy Linh',
     image: '/image/information/information3.webp',
     quote:
-        'Ở thời điểm phù hợp nhất, khoác lên mình bộ váy cưới đẹp nhất, gả cho người đáng tin cậy nhất, là anh.',
+      'Ở thời điểm phù hợp nhất, khoác lên mình bộ váy cưới đẹp nhất, gả cho người đáng tin cậy nhất, là anh.',
     family: {
       title: 'Gia đình nhà gái',
       father: 'Lê Văn C',

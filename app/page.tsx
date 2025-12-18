@@ -12,7 +12,7 @@ import { useRef, useState } from 'react';
 import OpeningScreen from '@/components/OpeningScreen';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
 import WeddingAttending from '@/components/section/WeddingAttending';
-import WeddingFamilySection from "@/components/section/WeddingFamilySection";
+import WeddingFamilySection from '@/components/section/WeddingFamilySection';
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
@@ -37,7 +37,7 @@ export default function Home() {
           <WeddingTimeline /> {/* Timeline ngày cưới*/}
           <WeddingAttending /> {/* Xác nhận tham dự*/}
           <Countdown /> {/* Đếm ngược ngày cưới*/}
-          <WeddingFamilySection/> {/* Thông tin đám cưới*/}
+          <WeddingFamilySection /> {/* Thông tin đám cưới*/}
           <Story /> {/* Câu chuyện tình yêu*/}
           {/*<Location /> /!* Google Map + địa chỉ*!/*/}
           <Wishes /> {/* Gửi lời chúc*/}

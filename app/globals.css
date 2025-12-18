@@ -172,11 +172,21 @@ h1 {
 }
 
 @keyframes gentle-shake {
-  0% { transform: rotate(0deg) scale(1); }
-  25% { transform: rotate(-1deg) scale(1.01); }
-  50% { transform: rotate(1deg) scale(1.01); }
-  75% { transform: rotate(-0.5deg) scale(1.01); }
-  100% { transform: rotate(0deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-1deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.01);
+  }
+  75% {
+    transform: rotate(-0.5deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 .shake-on-hover:hover {
@@ -185,5 +195,7 @@ h1 {
 
 .vn-text {
   letter-spacing: normal;
-  font-feature-settings: "kern" 1, "liga" 1;
+  font-feature-settings:
+    'kern' 1,
+    'liga' 1;
 }
