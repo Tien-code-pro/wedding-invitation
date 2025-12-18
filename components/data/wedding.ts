@@ -1,4 +1,5 @@
 import { Users, Heart, Camera, Utensils } from 'lucide-react';
+import {AnnouncementSide} from "@/types/apiTypes";
 
 // CÂU CHUYỆN TÌNH YÊU
 export const weddingStory = [
@@ -225,5 +226,48 @@ yêu thương của mọi người là món quà quý giá nhất.`,
     minDuration: 2,
     maxDuration: 5,
     maxDelay: 5,
+  },
+};
+
+// DỮ LIỆU THÔNG BÁO MỜI DỰ ĐÁM CƯỚI
+export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
+  trai: {
+    couple: {
+      groom: 'TIẾN DŨNG',
+      bride: 'THÙY LINH',
+    },
+    inviteText: 'Trân Trọng Kính Mời',
+    inviteTarget: 'Bạn và Người thương',
+    locationTitle: 'Tư Gia',
+    address: 'Thôn Trong, Xã Đông Phú, Bắc Ninh',
+    time: '09:30 - Chủ Nhật',
+    date: {
+      day: '30',
+      month: '11',
+      year: '2025',
+      lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
+    },
+    footerNote:
+        'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
+  },
+
+  gai: {
+    couple: {
+      groom: 'TIẾN DŨNG',
+      bride: 'THÙY LINH',
+    },
+    inviteText: 'Trân Trọng Kính Mời',
+    inviteTarget: 'Bạn và Gia đình',
+    locationTitle: 'Tư Gia',
+    address: 'Thôn Ngoài, Xã Đông Phú, Bắc Ninh',
+    time: '09:30 - Chủ Nhật',
+    date: {
+      day: '30',
+      month: '11',
+      year: '2025',
+      lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
+    },
+    footerNote:
+        'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
   },
 };
