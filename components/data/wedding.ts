@@ -155,3 +155,24 @@ export const weddingAlbumPreviewImages = weddingAlbumAllImages.slice(0, 10);
 
 // Ảnh nền cho nút "Xem thêm"
 export const weddingAlbumButtonBg = '/image/information/information1.webp';
+
+// LỜI CHÚC ĐÁM CƯỚI
+export const WISH_PRESETS = [
+  'Chúc hai bạn mãi hạnh phúc bên nhau 💕',
+  'Chúc gia đình nhỏ luôn ngập tràn yêu thương 🌸',
+  'Chúc tình yêu nở hoa theo năm tháng 💍',
+];
+
+export const UI_TEXT = {
+  title: '💌 Gửi lời chúc yêu thương',
+  namePlaceholder: 'Tên của bạn',
+  messagePlaceholder: 'Viết lời chúc chân thành tại đây...',
+  aiButton: 'AI gợi ý lời chúc',
+  sendButton: 'Gửi lời chúc',
+  footerNote: 'Lời chúc của bạn sẽ được lưu lại như một kỷ niệm',
+};
+
+export const AI_CONFIG = {
+  defaultTone: 'ngọt ngào',
+  fakeDelay: 1200, // dùng cho mock UI
+};
