@@ -7,7 +7,7 @@ import Events from '@/components/section/Events';
 import Countdown from '@/components/section/Countdown';
 import Gifts from '@/components/section/Gifts';
 import Footer from '@/components/section/Footer';
-import MusicPlayer, { MusicPlayerRef } from '@/components/MusicPlayer';
+import MusicPlayer from '@/components/section/MusicPlayer';
 import WeddingTimeline from '@/components/section/WeddingTimeline';
 import WeddingAttending from '@/components/section/WeddingAttending';
 import WeddingFamilySection from '@/components/section/WeddingFamilySection';
@@ -19,19 +19,16 @@ export default function Home() {
   const [opened, setOpened] = useState(false);
   const [showAnnouncement, setShowAnnouncement] = useState(false);
 
-  const musicRef = useRef<MusicPlayerRef | null>(null);
-
   const handleOpen = () => {
     setOpened(true);
 
     // bật nhạc
     setTimeout(() => {
-      musicRef.current?.play();
+      window.dispatchEvent(new Event('playWeddingMusic'));
     }, 300);
 
-    // xử lý popup tại đây
+    // Xử lý popup
     const seen = localStorage.getItem('wedding_popup_seen');
-    // const today = new Date().toDateString();
     const now = Date.now();
     const SIXTY_MINUTES = 60 * 60 * 1000;
 
@@ -51,8 +48,7 @@ export default function Home() {
           {showAnnouncement && (
             <AnnouncementPopup onClose={() => setShowAnnouncement(false)} />
           )}
-
-          <MusicPlayer ref={musicRef} />
+          <MusicPlayer />
           <Hero />
           <Events />
           <WeddingTimeline />
