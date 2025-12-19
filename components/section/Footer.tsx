@@ -22,33 +22,33 @@ export default function Footer() {
       </div>
 
       {/* ================= HEART EFFECT ================= */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
-        {[...Array(hearts.count)].map((_, i) => {
-          const size =
-            Math.random() * (hearts.maxSize - hearts.minSize) + hearts.minSize;
+      {/*<div className="absolute inset-0 z-10 pointer-events-none">*/}
+      {/*  {[...Array(hearts.count)].map((_, i) => {*/}
+      {/*    const size =*/}
+      {/*      Math.random() * (hearts.maxSize - hearts.minSize) + hearts.minSize;*/}
 
-          const duration =
-            Math.random() * (hearts.maxDuration - hearts.minDuration) +
-            hearts.minDuration;
+      {/*    const duration =*/}
+      {/*      Math.random() * (hearts.maxDuration - hearts.minDuration) +*/}
+      {/*      hearts.minDuration;*/}
 
-          return (
-            <span
-              key={i}
-              className="absolute text-rose-400/70 animate-pulse"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                fontSize: `${size}px`,
-                transform: `rotate(${Math.random() * 360}deg)`,
-                animationDelay: `${Math.random() * hearts.maxDelay}s`,
-                animationDuration: `${duration}s`,
-              }}
-            >
-              ❤
-            </span>
-          );
-        })}
-      </div>
+      {/*    return (*/}
+      {/*      <span*/}
+      {/*        key={i}*/}
+      {/*        className="absolute text-rose-400/70 animate-pulse"*/}
+      {/*        style={{*/}
+      {/*          top: `${Math.random() * 100}%`,*/}
+      {/*          left: `${Math.random() * 100}%`,*/}
+      {/*          fontSize: `${size}px`,*/}
+      {/*          transform: `rotate(${Math.random() * 360}deg)`,*/}
+      {/*          animationDelay: `${Math.random() * hearts.maxDelay}s`,*/}
+      {/*          animationDuration: `${duration}s`,*/}
+      {/*        }}*/}
+      {/*      >*/}
+      {/*        ❤*/}
+      {/*      </span>*/}
+      {/*    );*/}
+      {/*  })}*/}
+      {/*</div>*/}
 
       {/* ================= CONTENT ================= */}
       <div className="relative z-20 text-center px-6 max-w-3xl">
