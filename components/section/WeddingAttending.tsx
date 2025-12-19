@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { weddingAttendingContent } from '@/components/data/wedding';
+import WeddingNotice from '@/components/modal/WeddingNotice';
 
 export default function WeddingAttending() {
   const {
@@ -17,6 +18,7 @@ export default function WeddingAttending() {
   const [attending, setAttending] = useState<string>('Tôi sẽ tham dự'); // mặc định chọn
   const [people, setPeople] = useState<number>(1); // mặc định 1
   const [peopleDisabled, setPeopleDisabled] = useState<boolean>(false);
+  const [isNoticeOpen, setIsNoticeOpen] = useState(false);
 
   // Cập nhật people khi user chọn attending
   function handleAttendingChange(value: string) {
@@ -56,15 +58,20 @@ export default function WeddingAttending() {
     );
 
     setLoading(false);
+    setIsNoticeOpen(true);
     form.reset();
     setAttending('Tôi sẽ tham dự');
     setPeople(1);
     setPeopleDisabled(false);
-    alert('💌 Cảm ơn bạn đã xác nhận tham dự!');
+    // alert('💌 Cảm ơn bạn đã xác nhận tham dự!');
   }
 
   return (
     <section className="py-28 bg-[#fff7f0]">
+      <WeddingNotice
+        isOpen={isNoticeOpen}
+        onClose={() => setIsNoticeOpen(false)}
+      />
       <div className="max-w-6xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center mb-16 px-4">

@@ -14,6 +14,8 @@ import WeddingFamilySection from '@/components/section/WeddingFamilySection';
 import WeddingAlbum from '@/components/section/WeddingAlbum';
 import AnnouncementPopup from '@/components/section/AnnouncementPopup';
 import OpeningScreen from '@/components/section/OpeningScreen';
+import Snowfall from '@/components/section/Snowfall';
+import WeddingNotice from '@/components/modal/WeddingNotice';
 
 export default function Home() {
   const [opened, setOpened] = useState(false);
@@ -49,6 +51,7 @@ export default function Home() {
             <AnnouncementPopup onClose={() => setShowAnnouncement(false)} />
           )}
           <MusicPlayer />
+          <Snowfall />
           <Hero />
           <Events />
           <WeddingTimeline />
