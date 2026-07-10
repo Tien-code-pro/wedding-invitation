@@ -1,6 +1,9 @@
 'use client';
 
-export default function WeddingCalendar({ weddingDate }) {
+interface WeddingCalendarProps {
+  weddingDate: string;
+}
+export default function WeddingCalendar({ weddingDate }: WeddingCalendarProps) {
   const date = new Date(weddingDate);
   const year = date.getFullYear();
   const month = date.getMonth();
