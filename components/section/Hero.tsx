@@ -39,7 +39,7 @@ export default function Hero() {
             className={`text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-[0_8px_20px_rgba(0,0,0,0.6)] leading-relaxed ${dancingScript.variable}`}
           >
             {/* Tên chú rể */}
-            <span className="block md:inline">Tiến Dũng</span>
+            <span className="block md:inline">Minh Tiến</span>
 
             {/* Dấu & */}
             <span className="block md:inline mx-0 md:mx-3 text-3xl md:text-5xl">
@@ -47,7 +47,7 @@ export default function Hero() {
             </span>
 
             {/* Tên cô dâu */}
-            <span className="block md:inline">Thùy Linh</span>
+            <span className="block md:inline">Ngọc Linh</span>
           </motion.h1>
 
           {/* Quote below */}

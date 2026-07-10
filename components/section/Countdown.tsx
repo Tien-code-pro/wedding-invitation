@@ -131,7 +131,7 @@ export default function Countdown() {
               className="text-3xl md:text-5xl text-gray-800 mt-2"
               style={{ fontFamily: "'Dancing Script', cursive" }}
             >
-              Tiến Dũng & Thùy Linh
+              Minh Tiến & Ngọc Linh
             </h3>
           </div>
         </div>

@@ -111,9 +111,9 @@ export default function Events() {
             </p>
 
             <p className="mt-8 font-[var(--font-great-vibes)] text-4xl">
-              Tiến Dũng
+              Minh Tiến
               <p className="my-4 text-xl">&</p>
-              Thùy Linh
+              Ngọc Linh
             </p>
 
             {/* EVENT 1 */}

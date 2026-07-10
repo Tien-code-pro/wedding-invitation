@@ -32,9 +32,9 @@ export const weddingEvents = [
     title1: 'TIỆC THÂN MẬT NHÀ TRAI',
     title2: 'LỄ THÀNH HÔN',
     time: '15 giờ 30 phút',
-    date: 'Thứ 7, ngày 20 tháng 12 năm 2025',
+    date: 'Thứ 7, ngày 20 tháng 12 năm 2027',
     lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
-    address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
+    address: 'Xã Bình Mỹ, Huyện Bình Lục, Tỉnh Hà Nam',
   },
   {
     type: 'bride',
@@ -43,9 +43,9 @@ export const weddingEvents = [
     title1: 'TIỆC THÂN MẬT NHÀ GÁI',
     title2: 'LỄ VU QUY',
     time: '15 giờ 30 phút',
-    date: 'Thứ 7, ngày 20 tháng 12 năm 2025',
+    date: 'Thứ 7, ngày 20 tháng 12 năm 2027',
     lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
-    address: 'Thôn Thủ Độ, An Tường, Vĩnh Tường, Vĩnh Phúc',
+    address: 'Ngõ 193, Phố Nam Dư, Phường Vĩnh Hưng, Hà Nội',
   },
 ];
 
@@ -53,28 +53,28 @@ export const weddingEvents = [
 export const weddingTimeline = [
   {
     time: '09:00',
-    date: '20.12.2025',
+    date: '20.12.2027',
     title: 'Đón khách',
     side: 'Nhà Trai',
     icon: Users,
   },
   {
     time: '09:30',
-    date: '20.12.2025',
+    date: '20.12.2027',
     title: 'Lễ Thành Hôn',
     side: 'Nhà Trai',
     icon: Heart,
   },
   {
     time: '10:00',
-    date: '20.12.2025',
+    date: '20.12.2027',
     title: 'Chụp ảnh kỷ niệm',
     side: 'Cô Dâu & Chú Rể',
     icon: Camera, // Đưa camera vào đúng mục chụp ảnh
   },
   {
     time: '10:30',
-    date: '20.12.2025',
+    date: '20.12.2027',
     title: 'Khai tiệc',
     side: 'Nhà Trai',
     icon: Utensils, // Dùng icon bộ đồ ăn cho khai tiệc
@@ -113,26 +113,26 @@ export const weddingFamilyData = {
   background: '/image/information/information1.webp',
 
   groom: {
-    name: 'Tiến Dũng',
+    name: 'Minh Tiến',
     image: '/image/information/information2.webp',
     quote:
       'Đối với chúng mình, hôn nhân không phải là đích đến cuối của tình yêu mà là khởi đầu của hạnh phúc.',
     family: {
       title: 'Gia đình nhà trai',
-      father: 'Nguyễn Văn A',
-      mother: 'Trần Thị B',
+      father: 'Lương Văn Tâng',
+      mother: 'Nguyễn Thị Xuyến',
     },
   },
 
   bride: {
-    name: 'Thùy Linh',
+    name: 'Ngọc Linh',
     image: '/image/information/information3.webp',
     quote:
       'Ở thời điểm phù hợp nhất, khoác lên mình bộ váy cưới đẹp nhất, gả cho người đáng tin cậy nhất, là anh.',
     family: {
       title: 'Gia đình nhà gái',
-      father: 'Lê Văn C',
-      mother: 'Phạm Thị D',
+      father: 'Nguyễn Thị Lan',
+      mother: 'Trương Văn Ngọc',
     },
   },
 };
@@ -191,7 +191,7 @@ export const GIFT_RECEIVERS = [
   {
     id: 'groom',
     label: 'Chú rể',
-    name: 'NGUYỄN TIẾN DŨNG',
+    name: 'LƯƠNG MINH TIẾN',
     bank: 'Techcombank',
     accountNumber: '1903 6922 0560 19',
     qrImage: '/image/qr/qr-boy.jpeg',
@@ -199,7 +199,7 @@ export const GIFT_RECEIVERS = [
   {
     id: 'bride',
     label: 'Cô dâu',
-    name: 'TRẦN THÙY LINH',
+    name: 'TRƯƠNG NGỌC LINH',
     bank: 'Techcombank',
     accountNumber: '1903 6922 0560 19',
     qrImage: '/image/qr/qr-boy.jpeg',
@@ -233,18 +233,18 @@ yêu thương của mọi người là món quà quý giá nhất.`,
 export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
   trai: {
     couple: {
-      groom: 'TIẾN DŨNG',
-      bride: 'THÙY LINH',
+      groom: 'MINH TIẾN',
+      bride: 'NGỌC LINH',
     },
     inviteText: 'Trân Trọng Kính Mời',
     inviteTarget: 'Bạn và Người thương',
     locationTitle: 'Tư Gia',
-    address: 'Thôn Trong, Xã Đông Phú, Bắc Ninh',
+    address: 'Xã Bình Mỹ, Huyện Bình Lục, Tỉnh Hà Nam',
     time: '09:30 - Chủ Nhật',
     date: {
-      day: '30',
-      month: '11',
-      year: '2025',
+      day: '20',
+      month: '12',
+      year: '2027',
       lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
     },
     footerNote:
@@ -253,18 +253,18 @@ export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
 
   gai: {
     couple: {
-      groom: 'TIẾN DŨNG',
-      bride: 'THÙY LINH',
+      groom: 'MINH TIẾN',
+      bride: 'NGỌC LINH',
     },
     inviteText: 'Trân Trọng Kính Mời',
     inviteTarget: 'Bạn và Gia đình',
     locationTitle: 'Tư Gia',
-    address: 'Thôn Ngoài, Xã Đông Phú, Bắc Ninh',
+    address: 'Ngõ 193, Phố Nam Dư, Phường Vĩnh Hưng, Hà Nội',
     time: '09:30 - Chủ Nhật',
     date: {
-      day: '30',
-      month: '11',
-      year: '2025',
+      day: '20',
+      month: '12',
+      year: '2027',
       lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
     },
     footerNote:
