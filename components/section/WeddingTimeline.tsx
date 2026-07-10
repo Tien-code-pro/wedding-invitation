@@ -3,7 +3,8 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { weddingTimeline } from '@/components/data/wedding';
-import { FaHeart } from 'react-icons/fa';
+import WeddingCalendar from '@/components/section/WeddingCalendar';
+import { WEDDING_DATE } from '@/components/data/wedding';
 
 export default function WeddingTimeline() {
   return (
@@ -86,38 +87,7 @@ export default function WeddingTimeline() {
             {/* RIGHT – VISUAL */}
             <div className="relative z-10 p-12 flex flex-col items-center justify-center gap-10">
               {/* CALENDAR */}
-              <div className="w-72 rounded-2xl bg-white/95 shadow-2xl p-5 text-center">
-                <p className="text-sm tracking-widest text-gray-500 uppercase">
-                  December 2025
-                </p>
-
-                <div className="grid grid-cols-7 gap-2 mt-4 text-sm text-gray-600">
-                  {Array.from({ length: 31 }).map((_, i) => {
-                    const day = i + 1;
-                    const isWeddingDay = day === 20;
-
-                    return (
-                      <div
-                        key={day}
-                        className={`relative flex items-center justify-center h-8 rounded-full
-              ${
-                isWeddingDay
-                  ? 'bg-red-500 text-white font-semibold shadow-md'
-                  : ''
-              }`}
-                      >
-                        {day}
-
-                        {isWeddingDay && (
-                          <span className="absolute -top-3 text-red-500 text-lg">
-                            ❤️
-                          </span>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+              <WeddingCalendar weddingDate={WEDDING_DATE} />
 
               {/* MAIN IMAGE */}
               <div className="relative w-72 h-96 rounded-2xl overflow-hidden shadow-2xl">

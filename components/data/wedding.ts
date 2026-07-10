@@ -1,6 +1,11 @@
 import { Users, Heart, Camera, Utensils } from 'lucide-react';
 import { AnnouncementSide } from '@/types/apiTypes';
 
+// NGÀY CƯỚI - CHỈ CẦN ĐỔI Ở ĐÂY
+export const WEDDING_DATE = '2027-12-25'; // format: YYYY-MM-DD
+export const WEDDING_DATE_TIME = '20.12.2027';
+
+
 // CÂU CHUYỆN TÌNH YÊU
 export const weddingStory = [
   {
@@ -32,8 +37,8 @@ export const weddingEvents = [
     title1: 'TIỆC THÂN MẬT NHÀ TRAI',
     title2: 'LỄ THÀNH HÔN',
     time: '15 giờ 30 phút',
-    date: 'Thứ 7, ngày 20 tháng 12 năm 2027',
-    lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
+    date: 'Thứ 7, ngày 25 tháng 12 năm 2027',
+    lunar: '(Tức ngày 28 tháng 11 năm Đinh Mùi)',
     address: 'Xã Bình Mỹ, Huyện Bình Lục, Tỉnh Hà Nam',
   },
   {
@@ -43,8 +48,8 @@ export const weddingEvents = [
     title1: 'TIỆC THÂN MẬT NHÀ GÁI',
     title2: 'LỄ VU QUY',
     time: '15 giờ 30 phút',
-    date: 'Thứ 7, ngày 20 tháng 12 năm 2027',
-    lunar: '(Tức ngày 05 tháng 08 năm Giáp Thìn)',
+    date: 'Thứ 7, ngày 25 tháng 12 năm 2027',
+    lunar: '(Tức ngày 28 tháng 11 năm Đinh Mùi)',
     address: 'Ngõ 193, Phố Nam Dư, Phường Vĩnh Hưng, Hà Nội',
   },
 ];
@@ -53,28 +58,28 @@ export const weddingEvents = [
 export const weddingTimeline = [
   {
     time: '09:00',
-    date: '20.12.2027',
+    date: WEDDING_DATE_TIME,
     title: 'Đón khách',
     side: 'Nhà Trai',
     icon: Users,
   },
   {
     time: '09:30',
-    date: '20.12.2027',
+    date: WEDDING_DATE_TIME,
     title: 'Lễ Thành Hôn',
     side: 'Nhà Trai',
     icon: Heart,
   },
   {
     time: '10:00',
-    date: '20.12.2027',
+    date: '25.12.2027',
     title: 'Chụp ảnh kỷ niệm',
     side: 'Cô Dâu & Chú Rể',
     icon: Camera, // Đưa camera vào đúng mục chụp ảnh
   },
   {
     time: '10:30',
-    date: '20.12.2027',
+    date: WEDDING_DATE_TIME,
     title: 'Khai tiệc',
     side: 'Nhà Trai',
     icon: Utensils, // Dùng icon bộ đồ ăn cho khai tiệc
@@ -242,10 +247,10 @@ export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
     address: 'Xã Bình Mỹ, Huyện Bình Lục, Tỉnh Hà Nam',
     time: '09:30 - Chủ Nhật',
     date: {
-      day: '20',
+      day: '25',
       month: '12',
       year: '2027',
-      lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
+      lunar: '(Tức ngày 28 tháng 11 năm Đinh Mùi)',
     },
     footerNote:
       'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
@@ -262,10 +267,10 @@ export const ANNOUNCEMENT_DATA: Record<'trai' | 'gai', AnnouncementSide> = {
     address: 'Ngõ 193, Phố Nam Dư, Phường Vĩnh Hưng, Hà Nội',
     time: '09:30 - Chủ Nhật',
     date: {
-      day: '20',
+      day: '25',
       month: '12',
       year: '2027',
-      lunar: '(Tức ngày 11 tháng 10 năm Ất Tỵ)',
+      lunar: '(Tức ngày 28 tháng 11 năm Đinh Mùi)',
     },
     footerNote:
       'Sự hiện diện của quý khách\nlà niềm vinh hạnh cho gia đình chúng tôi',
