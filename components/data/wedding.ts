@@ -5,7 +5,6 @@ import { AnnouncementSide } from '@/types/apiTypes';
 export const WEDDING_DATE = '2027-12-25'; // format: YYYY-MM-DD
 export const WEDDING_DATE_TIME = '20.12.2027';
 
-
 // CÂU CHUYỆN TÌNH YÊU
 export const weddingStory = [
   {
@@ -136,8 +135,8 @@ export const weddingFamilyData = {
       'Ở thời điểm phù hợp nhất, khoác lên mình bộ váy cưới đẹp nhất, gả cho người đáng tin cậy nhất, là anh.',
     family: {
       title: 'Gia đình nhà gái',
-      father: 'Nguyễn Thị Lan',
-      mother: 'Trương Văn Ngọc',
+      father: 'Lê Thị Hương Lan',
+      mother: 'Trương Ngọc Anh',
     },
   },
 };

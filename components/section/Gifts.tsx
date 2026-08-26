@@ -44,51 +44,63 @@ export default function WeddingGifts() {
       </div>
 
       {/* 3. MODAL */}
+      {/* 3. MODAL */}
       {isOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-4">
+          {/* BACKDROP */}
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
 
-          <div className="relative bg-[#fffaf5] w-full max-w-3xl rounded-[40px] shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300">
+          {/* MODAL */}
+          <div className="relative z-10 w-full max-w-3xl max-h-[92dvh] overflow-hidden rounded-[28px] sm:rounded-[40px] bg-[#fffaf5] shadow-2xl animate-in zoom-in-95 duration-300">
+            {/* CLOSE */}
             <button
+              type="button"
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-6 z-10 p-2 bg-white/50 hover:bg-white rounded-full"
+              aria-label="Đóng"
+              className="absolute top-3 right-3 sm:top-6 sm:right-6 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 shadow-sm transition hover:bg-white"
             >
-              <X size={24} className="text-gray-500" />
+              <X size={22} className="text-gray-500" />
             </button>
 
-            <div className="p-8 md:p-12">
-              <h3 className="text-center font-[var(--font-great-vibes)] text-4xl text-gray-700 mb-10">
+            {/* CONTENT */}
+            <div className="max-h-[92dvh] overflow-y-auto overscroll-contain p-5 sm:p-8 md:p-12">
+              <h3 className="pr-10 text-center font-[var(--font-great-vibes)] text-3xl sm:text-4xl text-gray-700 mb-7 sm:mb-10">
                 {WEDDING_GIFTS_TEXT.modalTitle}
               </h3>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
                 {GIFT_RECEIVERS.map((receiver) => (
                   <div
                     key={receiver.id}
-                    className="flex flex-col items-center space-y-4"
+                    className="flex flex-col items-center space-y-3 sm:space-y-4"
                   >
-                    <div className="bg-white p-4 rounded-3xl shadow-lg border border-gray-100 w-full max-w-[240px]">
+                    {/* QR */}
+                    <div className="w-full max-w-[190px] sm:max-w-[240px] rounded-3xl border border-gray-100 bg-white p-3 sm:p-4 shadow-lg">
                       <div className="relative aspect-square w-full">
                         <Image
                           src={receiver.qrImage}
                           alt={`QR ${receiver.label}`}
                           fill
+                          sizes="(max-width: 640px) 190px, 240px"
                           className="object-contain"
                         />
                       </div>
                     </div>
 
+                    {/* INFO */}
                     <div className="text-center">
-                      <p className="text-rose-500 font-bold uppercase tracking-widest text-xs mb-1">
+                      <p className="mb-1 text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] sm:tracking-widest text-rose-500">
                         {receiver.label}
                       </p>
-                      <p className="text-gray-700 font-semibold">
+
+                      <p className="text-sm sm:text-base font-semibold text-gray-700">
                         {receiver.name}
                       </p>
-                      <p className="text-gray-400 text-sm">
+
+                      <p className="text-xs sm:text-sm text-gray-400">
                         {receiver.bank} - {receiver.accountNumber}
                       </p>
                     </div>
